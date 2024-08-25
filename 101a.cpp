@@ -4,14 +4,18 @@ using namespace std;
 #define rep1(i, n) for (int i = 1; i < (int)(n + 1); i++)
 typedef long long ll;
 
-int main(){
+int main()
+{
     string s;
-    int ans=0;
+    int ans = 0;
     cin >> s;
-    rep(i,s.length()){
-        if (s[i] == '+') ans++;
-        else ans--;
+    rep(i, s.length())
+    {
+        if (s[i] == '+')
+            ans++;
+        else
+            ans--;
     }
     cout << ans << endl;
-    return  0;
+    return 0;
 }
